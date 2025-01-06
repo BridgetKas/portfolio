@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from './button'
 import { NavLink } from 'react-router-dom'
 
@@ -34,13 +33,19 @@ const navbar = [
 
 function NavBar() {
   return (
-    <div>
-        {
-            navbar.map((item)=> {
-                return <NavLink to={item.path}>{item.component}</NavLink>
-            })
-        }
+    <div className="flex items-center content-between w-[80%] mx-auto mt-3">
+        <div>
+            <p>LOGO</p>
+        </div>
+        <div className='flex items-center gap-2'>
+            {
+                navbar.map((item)=> {
+                    return <NavLink to={item.path}>{item.component}</NavLink>
+                })
+            }
+        </div>
     </div>
+
   )
 }
 
