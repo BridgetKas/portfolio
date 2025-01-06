@@ -33,15 +33,17 @@ const navbar = [
 
 function NavBar() {
   return (
-    <div className="flex items-center content-between w-[80%] mx-auto mt-3">
+    <div className="flex  items-center justify-between w-[90%] mx-auto mt-3">
         <div>
             <p>LOGO</p>
         </div>
-        <div className='flex items-center gap-2'>
+        <div className="flex items-center gap-3">
             {
-                navbar.map((item)=> {
-                    return <NavLink to={item.path}>{item.component}</NavLink>
-                })
+                navbar.map((item)=> (
+                    <div key={item.id}>
+                        <NavLink to={item.path}>{item.component}</NavLink>
+                    </div>
+                ))
             }
         </div>
     </div>
