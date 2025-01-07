@@ -9,7 +9,7 @@ function Footer() {
         <div>
             <p className="flex  flex-wrap sm:flex-row items-center gap-1.5">Copyright <FaRegCopyright />2025 Namugga Bridget. All rights reserved.</p>
         </div>
-        <div className="flex flex-row text-[16px] items-center gap-1.5 sm:text-xl">
+        <div className="flex flex-row text-[16px] items-center gap-2.5 sm:text-xl">
             <FaLinkedin />
             <FaGithub />
             <FaXTwitter />
