@@ -42,6 +42,7 @@ function NavBar() {
                 navbar.map((item)=> (
                     <div key={item.id}>
                         <NavLink to={item.path}>{item.component}</NavLink>
+                        <p>Try again</p>
                     </div>
                 ))
             }
