@@ -3,17 +3,21 @@ import NavBar from "./Components/nav"
 import Footer from "./Components/footer"
 function LayOut() {
   return (
-    <div>
+    <>
+      <div>
         <div>
           <NavBar/>
         </div>
         <div>
           <Outlet/>
         </div>
-        <div>
-          <Footer/>
-        </div>
-    </div>
+         
+      </div>
+      <div>
+        <Footer/>
+      </div>
+    </>
+
   )
 }
 
