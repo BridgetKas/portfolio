@@ -37,16 +37,16 @@ function NavBar() {
         <div>
             <p>LOGO</p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="hidden sm:flex sm:items-center sm:gap-2.5">
             {
                 navbar.map((item)=> (
                     <div key={item.id}>
                         <NavLink to={item.path}>{item.component}</NavLink>
-                        <p>Try again</p>
                     </div>
                 ))
             }
         </div>
+        
     </div>
 
   )
