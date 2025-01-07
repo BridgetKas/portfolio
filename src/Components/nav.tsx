@@ -1,6 +1,6 @@
 import Button from './button'
 import { NavLink } from 'react-router-dom'
-
+import { MdMenu } from "react-icons/md";
 
 
 const navbar = [
@@ -45,6 +45,9 @@ function NavBar() {
                     </div>
                 ))
             }
+        </div>
+        <div className="block text-4xl items-center sm:hidden">
+            <MdMenu />
         </div>
         
     </div>
