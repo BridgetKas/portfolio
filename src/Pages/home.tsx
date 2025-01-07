@@ -1,7 +1,10 @@
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <p>Hello </p>
+      <p>I'm Bridget Namugga a front end developed based in Uganda.</p>
+    </div>
   )
 }
 
