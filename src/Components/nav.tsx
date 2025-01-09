@@ -34,9 +34,7 @@ const navbar = [
 function NavBar() {
   return (
     <div className="flex  items-center justify-between w-[90%] mx-auto mt-3">
-        <div>
             <p>LOGO</p>
-        </div>
         <div className="hidden sm:flex sm:items-center sm:gap-2.5">
             {
                 navbar.map((item)=> (

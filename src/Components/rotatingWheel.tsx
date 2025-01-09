@@ -4,22 +4,18 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 function RotatingWheel() {
        
-    // const icons = [
-    //     '🌟', '🎯', '🚀', '💡', '📦', '🔥', '🔔', '⚙️' // Add your icons here
-    //   ];
-
     const icons = [
         <FaHtml5  color='white' size={35} style={{backgroundColor:'orange'}}/>,
         <IoLogoCss3 color='white' size={35} style={{backgroundColor:'blue'}}/>,
         <FaJsSquare color='black' size={35} style={{backgroundColor:'yellow'}}/>,
         <FaReact   color='blue' size={35} />,
-        <RiTailwindCssFill color='blue' size={35} />,
+        <RiTailwindCssFill color='red' size={35} />,
         <SiTypescript color='blue' size={35} style={{backgroundColor:'white'}}/>
     ]
     
     return (
     <div className="relative w-64 h-64 mx-auto animate-slowspin">
-        <div className="absolute inset-0 rounded-full border-2 border-red-700"></div>
+        <div className="absolute inset-0 rounded-full border-2 border-gray-700"></div>
         {icons.map((icon, index) => {
         const angle = (360/ icons.length) * index;
         const radian = (angle * Math.PI) / 180;

@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className='flex items-center justify-between bg-gray-800 text-white p-3'>
+    <footer className=' absolute bottom-0 w-full flex items-center justify-between bg-gray-800 text-white p-3'>
         <div>
             <p className="flex  flex-wrap sm:flex-row items-center gap-1.5">Copyright <FaRegCopyright />2025 Namugga Bridget. All rights reserved.</p>
         </div>

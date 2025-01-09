@@ -4,19 +4,9 @@ import Footer from "./Components/footer"
 function LayOut() {
   return (
     <>
-      <div>
-        <div>
-          <NavBar/>
-        </div>
-        
-        <div>
-          <Outlet/>
-        </div>
-         
-      </div>
-      <div>
+        <NavBar/>
+        <Outlet/>
         <Footer/>
-      </div>
     </>
 
   )
