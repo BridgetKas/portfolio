@@ -31,7 +31,7 @@ const navbar = [
     }
 ]
 
-function NavBar() {
+function DesktopNav() {
   return (
     <div className="flex  items-center justify-between w-[90%] mx-auto mt-3">
             <p>LOGO</p>
@@ -53,4 +53,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default DesktopNav
