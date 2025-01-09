@@ -8,6 +8,7 @@ function LayOut() {
         <div>
           <NavBar/>
         </div>
+        
         <div>
           <Outlet/>
         </div>

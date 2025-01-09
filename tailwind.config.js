@@ -4,7 +4,11 @@ export default {
     "./src/**/*.tsx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        slowspin: "spin 10s linear infinite", // Define a custom animation
+      },
+    },
   },
   plugins: [],
 }
