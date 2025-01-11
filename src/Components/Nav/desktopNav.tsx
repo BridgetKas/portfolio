@@ -5,27 +5,23 @@ import { NavLink } from 'react-router-dom'
 const navbar = [
     {
         component:<Button title='Home'/>,
+        label:'Home',
         id:1,
         path:'/'
     },
     {
-        component:<Button title='About'/>,
+        label:"Blog",
         id:2,
-        path:'/about'
-    },
-    {
-        component:<Button title='Blog'/>,
-        id:3,
         path:'/blog'
     },
     {
-        component:<Button title='Projects'/>,
-        id:4,
+        label:"Projects",
+        id:3,
         path:'/projects'
     },
     {
-        component:<Button title='Contact'/>,
-        id:5,
+        label:"Contact",
+        id:4,
         path:'/contact' 
     }
 ]
@@ -36,7 +32,7 @@ function DesktopNav() {
             {
                 navbar.map((item)=> (
                     <div key={item.id}>
-                        <NavLink to={item.path}>{item.component}</NavLink>
+                        <NavLink to={item.path}>{item.label}</NavLink>
                     </div>
                 ))
             }

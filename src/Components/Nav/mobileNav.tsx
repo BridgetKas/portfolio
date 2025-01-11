@@ -14,26 +14,22 @@ import styles from './nav.module.css'
 
 const navbar = [
   {
-      // component:<Button title='Home'/>,
       label:"Home",
       id:1,
       path:'/'
   },
  
   {
-      // component:<Button title='Blog'/>,
       label:"Blog",
       id:2,
       path:'/blog'
   },
   {
-      // component:<Button title='Projects'/>,
       label:"Projects",
       id:3,
       path:'/projects'
   },
   {
-      // component:<Button title='Contact'/>,
       label:"Contact",
       id:4,
       path:'/contact' 
