@@ -11,7 +11,7 @@ function Footer() {
             {/* <p > Namugga Bridget.</p> */}
 
         </div>
-        <div className="flex flex-row text-[16px] items-center gap-2.5 sm:text-xl">
+        <div className="flex flex-row text-[16px] items-center text-center gap-2.5 sm:text-xl">
             <FaLinkedin />
             <FaGithub />
             <FaXTwitter />
