@@ -28,7 +28,7 @@ const navbar = [
 
 function DesktopNav() {
   return (
-        <div className="hidden sm:flex sm:items-center sm:gap-2.5">
+        <div className="hidden sm:flex sm:items-center sm:gap-4">
             {
                 navbar.map((item)=> (
                     <div key={item.id}>
