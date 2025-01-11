@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
 import { colors } from '../../utilis/colors';
+import styles from './nav.module.css'
 
 
 
@@ -42,17 +43,23 @@ function MobileNav() {
     const [isOpen,setisOpen] = useState(false)
 
     const menuClicked = () => {
+      console.log('clicked')
       setisOpen(!isOpen)
-     }
+    }
+
+    const linkClicked=() =>{
+      setisOpen(!isOpen)
+    }
   
     return (
       <div className='flex flex-col sm:hidden'>
-          <GiHamburgerMenu size={30} color={colors.whiteGradient} onClick={menuClicked}/> 
-          <div className= {`'flex flex-col absolute left-0 right-0 pr-[50%] top-[90px] w-full gap-[15px] items-end translate-x-[70%] transition-transform bg-red-400'${isOpen ? 'translate-x-0':''}`}>
-            <div className='flex flex-col gap-[10px] items-end mr-[4%]'>
+          <GiHamburgerMenu size={30} color={colors.black} onClick={menuClicked} /> 
+          <div >
+            <div className={`${styles.mobileDropdown} ${isOpen ? styles.open: ""}`}>
               {navbar.map(item => 
-                <NavLink to={item.path} key={item.path} className='my-0 mx-[0.6rem] xl:marker:selection:mx-[1.5rem]'>{item.label}</NavLink>
+                <NavLink to={item.path} key={item.path} className='my-0 mx-[0.6rem] text-[18px]' onClick={linkClicked}>{item.label}</NavLink>
               )}
+             
             </div>
           </div>
       </div>

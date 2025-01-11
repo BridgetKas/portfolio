@@ -1,0 +1,21 @@
+
+.mobileDropdown {
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    left:0;
+    right:0;
+    top:65px;
+    width:100%;
+    row-gap:5px;
+    align-items:end;
+    transition: all 0.5s ease-in;
+    transform: translateX(70%);
+    opacity: 0.5;
+    
+}
+
+.mobileDropdown.open {
+    transform: translateX(0);
+    opacity: 1;
+}

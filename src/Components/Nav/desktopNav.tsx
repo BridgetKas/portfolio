@@ -1,6 +1,5 @@
 import Button from '../button'
 import { NavLink } from 'react-router-dom'
-import { MdMenu } from "react-icons/md";
 
 
 const navbar = [
@@ -33,8 +32,6 @@ const navbar = [
 
 function DesktopNav() {
   return (
-    <div className="flex  items-center justify-between w-[90%] mx-auto mt-3">
-            <p>LOGO</p>
         <div className="hidden sm:flex sm:items-center sm:gap-2.5">
             {
                 navbar.map((item)=> (
@@ -44,12 +41,6 @@ function DesktopNav() {
                 ))
             }
         </div>
-        <div className="block text-4xl items-center sm:hidden">
-            <MdMenu />
-        </div>
-        
-    </div>
-
   )
 }
 
