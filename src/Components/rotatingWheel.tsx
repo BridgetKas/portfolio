@@ -14,7 +14,7 @@ function RotatingWheel() {
     ]
     
     return (
-    <div className="relative w-64 h-64 mx-auto animate-slowspin">
+    <div className="relative w-64 h-64 mx-auto animate-slowspin ">
         <div className="absolute inset-0 rounded-full border-2 border-gray-700"></div>
         {icons.map((icon, index) => {
         const angle = (360/ icons.length) * index;
