@@ -50,7 +50,7 @@ function MobileNav() {
     return (
       <div className='flex flex-col sm:hidden'>
           <GiHamburgerMenu size={30} color={colors.black} onClick={menuClicked} /> 
-          <div >
+          <div className='bg-primary'>
             <div className={`${styles.mobileDropdown} ${isOpen ? styles.open: ""}`}>
               {navbar.map(item => 
                 <NavLink to={item.path} key={item.path} className='my-0 mx-[0.6rem] text-[18px]' onClick={linkClicked}>{item.label}</NavLink>
