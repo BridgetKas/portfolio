@@ -12,7 +12,7 @@ function HomePage() {
         <p>Explore my work, and let's work together!</p>
         <button className='text-center p-2 bg-secondary py-1 px-2.5 text-primary rounded-full'>Hire me</button>
       </div>
-      <div className='w-full sm:w-[58%] bg-red-500 self-start'>
+      <div className='w-full sm:w-[58%] self-start'>
         <RotatingWheel />
       </div>
     
