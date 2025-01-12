@@ -10,6 +10,7 @@ function HomePage() {
         <p>Technologically, I possess expertise in mordern frameworks and technologies like Javascript,React, TypeScript, and Tailwind CSS.</p>
         <p>As a driven individual, I continously strive to explore new dmains within technology.</p>
         <p>Explore my work, and let's work together!</p>
+        <button className='text-center p-2 bg-secondary py-1 px-2.5 text-primary rounded-full'>Hire me</button>
       </div>
       <div className='w-full sm:w-[58%] bg-red-500 self-start'>
         <RotatingWheel />
