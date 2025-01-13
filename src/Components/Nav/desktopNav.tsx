@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { FaBriefcase } from "react-icons/fa";
 
 
 const navbar = [
@@ -36,9 +37,12 @@ function DesktopNav() {
                     ))
                 }
             </div>
-            <div>
-                <p>Available for work</p>
+            
+            <div className="flex items-center space-x-2 bg-yellow text-primary px-3 py-2 rounded-md shadow animate-pulse">
+                < FaBriefcase  className="w-5 h-5 text-white" />
+                <span>Available for Work</span>
             </div>
+
         </div>
   )
 }
