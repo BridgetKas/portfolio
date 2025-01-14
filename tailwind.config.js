@@ -7,6 +7,7 @@ export default {
     extend: {
       animation: {
         slowspin: "spin 10s linear infinite", // Define a custom animation
+        slowPulse: 'slow-pulse 5s ease-in-out infinite'
       },
       colors:{
         primary: "#ede8e3",
@@ -17,7 +18,9 @@ export default {
         whiteGradient: "rgba(255, 255, 255, 0.5)",
         darkGray: "#6a6a6a",
         paleBlue:"#adb5bd",
-      }
+      },
+      
+      
     },
   },
   plugins: [],
