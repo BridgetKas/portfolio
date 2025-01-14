@@ -26,4 +26,9 @@ html {
 @tailwind utilities;
 
 
+@layer components {
 
+  .input {
+    @apply p-3 border border-gray-700 rounded-full bg-transparent w-full
+  }
+}
