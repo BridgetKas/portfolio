@@ -29,6 +29,6 @@ html {
 @layer components {
 
   .input {
-    @apply p-3 border border-gray-700 rounded-full bg-transparent w-full
+    @apply p-3 border border-gray-700 rounded-full bg-transparent w-full mb-4
   }
 }
