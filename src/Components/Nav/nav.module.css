@@ -7,17 +7,14 @@
     right:0;
     top:65px;
     width:95%;
+    height: 67vh;
     margin:0 auto;
-    background-color: #344c36;
-    row-gap:5px;
+    background-color: rgba(250,250,250,0.6);
     align-items:end;
     transition: all 0.5s ease-in;
     transform: translateX(-110%);
     margin-top: 10px;
-    min-height: 22%;
     z-index:1000;
-    /* overflow-y-hidden */
-    
 }
 
 .mobileDropdown.open {
