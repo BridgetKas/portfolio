@@ -4,7 +4,7 @@ function ContactPage() {
   return (
     <div className='flex items-start justify-between mt-10 w-[95%] mx-auto'>
       <div>
-        <p>Let's discuss your next project</p>
+        <p className='text-bold text-xl'>Let's discuss <span className='text-yellow'>your next project </span></p>
       </div>
       <form className='flex flex-col bg-red-500 w-[60%] p-4'>
         <div className='flex '>
