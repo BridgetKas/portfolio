@@ -6,23 +6,23 @@ import { SiTypescript } from "react-icons/si";
 function RotatingWheel (){
  
   const icons = [
-            <FaHtml5  color='white' size={35} style={{backgroundColor:'orange'}}/>,
-            <IoLogoCss3 color='white' size={35} style={{backgroundColor:'blue'}}/>,
-            <FaJsSquare color='black' size={35} style={{backgroundColor:'yellow'}}/>,
-            <FaReact   color='blue' size={35} />,
-            <RiTailwindCssFill color='red' size={35} />,
-            <SiTypescript color='blue' size={35} style={{backgroundColor:'white'}}/>
+            <FaHtml5  color='#082407' size={35} />,
+            <IoLogoCss3 color='#082407' size={35} />,
+            <FaJsSquare color='#082407' size={35} />,
+            <FaReact   color='#082407' size={40} />,
+            <RiTailwindCssFill color='#082407' size={40} />,
+            <SiTypescript color='#082407' size={35} />
     ]
 
   return (
     <div className="relative w-[350px] h-[350px] mx-auto">
       {/* Rotating wheel border */}
-      <div className="absolute inset-0 rounded-full border-4 border-gray-300 animate-slowspin"> 
+      <div className="absolute inset-0 rounded-full border-2 border-gray-400 animate-slowspin"> 
       {icons.map((icon, index) => {
         const angle = (360 / icons.length) * index;
         const radian = (angle * Math.PI) / 180;
-        const x = Math.cos(radian) * 180; // Adjust radius
-        const y = Math.sin(radian) * 180;
+        const x = Math.cos(radian) * 175; // Adjust radius
+        const y = Math.sin(radian) * 175;
 
         return (
           <div
@@ -41,7 +41,7 @@ function RotatingWheel (){
 
       {/* Fixed avatar in the center */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[250px] h-[250px] rounded-full bg-yellow flex items-center justify-center shadow-lg">
+        <div className="w-[270px] h-[270px] rounded-full bg-yellow flex items-center justify-center shadow-lg">
           <img
                 src="https://api.dicebear.com/9.x/open-peeps/svg?seed=Riley&accessories=sunglasses2,sunglasses,glasses5,glasses4,glasses3,glasses2,glasses,eyepatch&face=awe,concerned,concernedFear,contempt,cute,cyclops,driven,eatingHappy,explaining,eyesClosed,fear,hectic,lovingGrin1,lovingGrin2,monster,old,rage,serious,smile,smileBig,smileLOL,smileTeethGap,solemn,suspicious,tired,veryAngry,cheeky,angryWithFang,blank&facialHair=goatee2,moustache1,moustache2,moustache3,moustache4,moustache5,moustache6,moustache7,moustache8,moustache9&backgroundColor=transparent"
                 alt="avatar" 
