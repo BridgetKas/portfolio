@@ -35,12 +35,18 @@ const navbar = [
       path:'/contact' 
   }
 ]
+type bodyType = HTMLHtmlElement| null
+const body:bodyType= document.querySelector('html')
+
 function MobileNav() {
     const [isOpen,setisOpen] = useState(false)
 
     const menuClicked = () => {
-      console.log('clicked')
       setisOpen(!isOpen)
+      if(isOpen && body){
+        console.log('hello')
+        body.style.overflow='hidden'
+      }
     }
 
     const linkClicked=() =>{
@@ -48,18 +54,22 @@ function MobileNav() {
     }
   
     return (
-      <div className='flex flex-col sm:hidden'>
+      <div className="flex items-center justify-between w-[95%] mx-auto mt-3 bg-secondary py-4 px-2.5 text-primary rounded-full sm:hidden">
+        <p>LOGO</p>
+
+        <div className='flex flex-col  '>
           <GiHamburgerMenu size={30} color={colors.black} onClick={menuClicked} /> 
-          <div className='bg-primary'>
+          <div>
             <div className={`${styles.mobileDropdown} ${isOpen ? styles.open: ""}`}>
               {navbar.map(item => 
                 <NavLink to={item.path} key={item.path} className='my-0 mx-[0.6rem] text-[18px]' onClick={linkClicked}>{item.label}</NavLink>
               )}
-             
+              <div className='bg-primary  w-full h-[40vh] '></div>
             </div>
           </div>
+
+        </div>
       </div>
-  
     )
 }
 

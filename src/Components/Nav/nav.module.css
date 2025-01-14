@@ -6,19 +6,21 @@
     left:0;
     right:0;
     top:65px;
-    width:100%;
+    width:95%;
+    margin:0 auto;
     background-color: #344c36;
     row-gap:5px;
     align-items:end;
     transition: all 0.5s ease-in;
-    transform: translateX(-100%);
-    opacity: 0.5;
+    transform: translateX(-110%);
     margin-top: 10px;
     min-height: 22%;
+    z-index:1000;
+    /* overflow-y-hidden */
     
 }
 
 .mobileDropdown.open {
     transform: translateX(0);
-    opacity: 1;
+    overflow-y: hidden;
 }

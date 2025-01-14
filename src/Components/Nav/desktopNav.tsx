@@ -27,22 +27,25 @@ const navbar = [
 
 function DesktopNav() {
   return (
-        <div className="hidden sm:flex sm:items-center sm:gap-4 sm:justify-between sm:w-[80%] text-[17px] md:w-[75%] lg:w-[60%]">
-            <div className='sm:flex sm:flex-row items-center gap-5'>
-                {
-                    navbar.map((item)=> (
-                        <div key={item.id}>
-                            <NavLink to={item.path}>{item.label}</NavLink>
-                        </div>
-                    ))
-                }
-            </div>
-            
-            <div className="flex items-center space-x-2 bg-yellow text-primary px-4 py-2.5 rounded-full shadow animate-pulse">
-                < FaBriefcase  className="w-5 h-5 text-white" />
-                <span>Available for Work</span>
-            </div>
+        <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full">
+            <p>LOGO</p>
+            <div className='sm:flex sm:flex-row items-center gap-5 justify-between bg-red-700 sm:w-[80%] md:w-[70%] lg:w-[60%]'>
+                <div className='sm:flex sm:flex-row items-center gap-5 bg-purple-950' >
+                    {
+                        navbar.map((item)=> (
+                            <div key={item.id}>
+                                <NavLink to={item.path}>{item.label}</NavLink>
+                            </div>
+                        ))
+                    }
+                </div>
+                
+                <div className="flex items-center space-x-2 bg-yellow text-primary px-3 py-2.5 rounded-full shadow animate-pulse">
+                    < FaBriefcase  className="w-4 h-4 text-white" />
+                    <span>Available for Work</span>
+                </div>
 
+            </div>
         </div>
   )
 }
