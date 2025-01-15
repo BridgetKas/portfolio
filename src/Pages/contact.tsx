@@ -8,22 +8,22 @@ import { FaXTwitter } from "react-icons/fa6";
 function ContactPage() {
   const [name,setName] =useState('')
   return (
-    <div className='flex flex-col items-start justify-between mt-10 w-[95%] mx-auto'>
-      <div className='bg-pink-600'>
-        <h1 className=' text-[40px] leading-snug font-medium'>Let's Connect and Build your Next Project </h1>
-        <div className="flex flex-row text-[16px]  gap-2.5 sm:text-xl bg-yellow items-center justify-center p-4">
+    <div className='flex flex-col mt-10 w-[95%] mx-auto'>
+      <div >
+        <h1 className=' text-[40px] leading-snug '>Let's Connect and Build your <span className='text-yellow font-medium'>Next Project</span></h1>
+        <div className="flex flex-row text-[20px] gap-2.5 items-center justify-center p-4">
           <FaLinkedin />
           <FaGithub />
           <FaXTwitter />
         </div>
       </div>
-      <form className='flex flex-col bg-red-500 w-full p-4'>
-        <div className='flex flex-col items-center'>
-          <div className='w-full'>
+      <form className='flex flex-col bg-red-500 w-[95%] p-4'>
+        <div className='flex flex-col  bg-purple-950 sm:flex-row sm:gap-2'>
+          <div>
             <label className='label'> First Name</label>
             <input type='text' placeholder="Enter your first name" value={name} className='input' required/>
           </div>
-          <div className='bg-purple-950'>
+          <div className=''>
             <label className='label'>Last Name</label>
             <input type='text' placeholder="Enter your last name" value={name} className='input'required/>  
           </div>
