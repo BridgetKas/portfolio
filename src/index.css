@@ -29,10 +29,8 @@ html {
 @layer components {
 
   .input {
-    @apply p-3 border border-gray-700 rounded-full bg-transparent w-full mb-4 text-gray-900
+    @apply p-3 border border-gray-700 bg-transparent w-full mb-1.5 text-gray-900
   }
-  .label {
-    @apply pl-5
-  }
+  
   
 }

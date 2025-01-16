@@ -29,7 +29,7 @@ function DesktopNav() {
   return (
         <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full">
             <p>LOGO</p>
-            <div className='sm:flex sm:flex-row sm:items-center gap-3 sm:w-[85%] md:w-[70%] lg:w-[60%]'>
+            <div className='sm:flex sm:flex-row sm:items-center sm:justify-between sm:w-[85%] md:w-[70%] lg:w-[60%]'>
                 <div className='sm:flex sm:flex-row items-center gap-5' >
                     {
                         navbar.map((item)=> (
