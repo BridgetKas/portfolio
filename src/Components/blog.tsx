@@ -6,7 +6,7 @@ type propsType = {
 }
 export default function MediaCard(props:propsType) {
   return (
-    <div className='p-4 border border-red-700'>
+    <div className='p-4 border border-red-700 shadow-xl'>
         <div>
             {props.image}
         </div>

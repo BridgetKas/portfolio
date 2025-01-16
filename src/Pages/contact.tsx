@@ -70,7 +70,7 @@ function ContactPage() {
         </div>
         <label className='label'> I'm interested in <span className='text-red-600'>*</span></label>
           <textarea className='input h-[150px]' placeholder='Enter your message' name='textarea' value={input.textarea} onChange={(e) =>handleChange(e)} required></textarea>
-        <button type='submit' className='bg-yellow text-black mt-2 p-2 '>Submit</button>
+        <button type='submit' className='bg-yellow text-black mt-2 px-2.5 py-2 rounded-full'>Submit</button>
       </form>
     </div>
   )
