@@ -1,3 +1,5 @@
+'use client'
+
 import {useState} from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -11,9 +13,9 @@ function ContactPage() {
     name:'',
     email:'',
     phone:'',
-    select:'Landing Page',
     textarea:''
   })
+  // const [isPending, startTransition] = useTransition();
 
   function handleChange(e:React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>){
     setInput({
@@ -22,9 +24,25 @@ function ContactPage() {
     })
   }
 
-  function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
+  function clearInput(){
+    setInput({
+      name:'',
+      email:'',
+      phone:'',
+      textarea:''
+    })
+  }
+
+  async function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    // startTransition(async () => {
+    //   const {error} = await updateName(name);
+    //   if (!error) {
+    //   } else {
+    //   }
+    //  })
     alert('Thank you for contacting us')
+    clearInput()
   }
 
   return (
@@ -32,9 +50,9 @@ function ContactPage() {
       <div className='md:w-[50%]' >
         <h1 className=' text-[40px] leading-snug p-4 text-center md:text-left'>Let's Connect and Build your <span className='text-yellow font-medium'>Next Project</span></h1>
         <div className="flex flex-row text-[30px] gap-2.5 items-center justify-center p-4 my-10">
-          <FaLinkedin />
-          <FaGithub />
-          <FaXTwitter />
+          <a href='#'><FaLinkedin /></a>
+          <a href='#'><FaGithub /></a>
+          <a href='#'><FaXTwitter /></a> 
         </div>
       </div>
       <form className='flex flex-col p-4 md:w-[50%]  shadow-xl' onSubmit={handleSubmit}>
@@ -51,8 +69,8 @@ function ContactPage() {
           <input name='phone'type='tel' placeholder="Enter your phone number" value={input.phone} className='input' onChange={(e) =>handleChange(e)}/>
         </div>
         <label className='label'> I'm interested in <span className='text-red-600'>*</span></label>
-          <textarea className='input h-[150px] mt-1.5' placeholder='Enter your message' name='textarea' value={input.textarea} onChange={(e) =>handleChange(e)}></textarea>
-        <button type='submit' className='bg-yellow text-black mt-2 p-2 rounded-full'>Submit</button>
+          <textarea className='input h-[150px]' placeholder='Enter your message' name='textarea' value={input.textarea} onChange={(e) =>handleChange(e)} required></textarea>
+        <button type='submit' className='bg-yellow text-black mt-2 p-2 '>Submit</button>
       </form>
     </div>
   )
