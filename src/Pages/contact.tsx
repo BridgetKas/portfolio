@@ -4,6 +4,8 @@ import {useState} from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import sendEmail from '../Components/sendEmail';
+import { validateEmail } from '../utilis/validate';
 
 
 
@@ -35,13 +37,15 @@ function ContactPage() {
 
   async function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    validateEmail(input.email)
     // startTransition(async () => {
     //   const {error} = await updateName(name);
     //   if (!error) {
     //   } else {
     //   }
     //  })
-    alert('Thank you for contacting us')
+    console.log(sendEmail())
+    // alert('Thank you for contacting us')
     clearInput()
   }
 

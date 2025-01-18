@@ -1,16 +1,8 @@
 import { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
-import { colors } from '../../utilis/colors';
 import styles from './nav.module.css'
 
-
-
-// interface menuType{
-//   icons:React.ReactNode[],
-//   id:number,
-//   label:string,
-// }
 
 const navbar = [
   {
@@ -56,7 +48,7 @@ function MobileNav() {
       <div className="flex items-center justify-between w-[95%] mx-auto mt-3 bg-secondary py-4 px-2.5 text-primary rounded-full sm:hidden">
         <p>LOGO</p>
         <div className='flex flex-col  '>
-          <GiHamburgerMenu size={30} color={colors.black} onClick={menuClicked} /> 
+          <GiHamburgerMenu size={30} color='#2f2f2f' onClick={menuClicked} /> 
             <div className={`${styles.mobileDropdown} ${isOpen ? styles.open: ""}`}>
               {navbar.map(item => 
                 <NavLink to={item.path} key={item.path} className='my-0 mx-[0.6rem] p-1.5 text-[18px] text-right text-primary w-full bg-secondary' onClick={linkClicked}>{item.label}</NavLink>

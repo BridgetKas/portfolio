@@ -1,11 +1,10 @@
 'use server'
 
 async function sendEmail() {
-  return (
-    <div>
-        console.log('happy')
-    </div>
-  )
+  return {
+    ok:true
+  }
+  
 }
 
 export default sendEmail

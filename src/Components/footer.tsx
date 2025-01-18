@@ -12,9 +12,9 @@ function Footer() {
 
         </div>
         <div className="flex flex-row text-[16px] items-center text-center gap-2.5 sm:text-xl">
-            <FaLinkedin />
-            <FaGithub />
-            <FaXTwitter />
+          <FaLinkedin />
+          <FaGithub />
+          <FaXTwitter />
         </div>
     </footer>
   )
