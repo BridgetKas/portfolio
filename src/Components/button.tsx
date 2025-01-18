@@ -1,12 +1,24 @@
 type buttonProps ={
-    title:string
+    title:string,
+    textColor:string,
+    bgColor:string,
+    borderColor:string
 }
 
+
 function Button(props:buttonProps) {
+  const {title,textColor,bgColor,borderColor} = props
   return (
-    <div>
-        <button className='text-black border-2 border-blue-700 p-2.5 rounded-xl'>{props.title}</button>
-    </div>
+    <button className= "border-2 border-transparent outline-none bg-transparent rounded-[30px] text-lg font-bold px-6 py-3"
+    style = {{
+      color:textColor ? textColor:'#fff',
+      backgroundColor: bgColor ? bgColor:'#2f2f2f',
+      borderColor:borderColor ? borderColor: '#2f2f2f',
+      fontWeight:'450',
+      marginTop:'10px'
+    }}>
+      {title}
+    </button>
   )
 }
 

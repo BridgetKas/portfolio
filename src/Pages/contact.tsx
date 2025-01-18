@@ -54,9 +54,9 @@ function ContactPage() {
       <div className='md:w-[50%]' >
         <h1 className=' text-[40px] leading-snug p-4 text-center md:text-left'>Let's Connect and Build your <span className='text-yellow font-medium'>Next Project</span></h1>
         <div className="flex flex-row text-[30px] gap-2.5 items-center justify-center p-4 my-10">
-          <a href='#'><FaLinkedin /></a>
-          <a href='#'><FaGithub /></a>
-          <a href='#'><FaXTwitter /></a> 
+          <a href='#' target='_blank' className='hover:scale-110 transform'><FaLinkedin /></a>
+          <a href='#' target='_blank' className='hover:scale-110 transform'><FaGithub /></a>
+          <a href='#' target='_blank' className='hover:scale-110 transform'><FaXTwitter /></a> 
         </div>
       </div>
       <form className='flex flex-col p-4 md:w-[50%]  shadow-xl' onSubmit={handleSubmit}>
