@@ -2,12 +2,13 @@ type buttonProps ={
     title:string,
     textColor:string,
     bgColor:string,
-    borderColor:string
+    borderColor:string,
+    click:React.MouseEventHandler<HTMLButtonElement> | undefined
 }
 
 
 function Button(props:buttonProps) {
-  const {title,textColor,bgColor,borderColor} = props
+  const {title,textColor,bgColor,borderColor,click} = props
   return (
     <button className= "border-2 border-transparent outline-none bg-transparent rounded-[30px] text-lg font-bold px-6 py-3"
     style = {{
@@ -16,7 +17,9 @@ function Button(props:buttonProps) {
       borderColor:borderColor ? borderColor: '#2f2f2f',
       fontWeight:'450',
       marginTop:'10px'
-    }}>
+    }}
+   onClick={click}
+    >
       {title}
     </button>
   )

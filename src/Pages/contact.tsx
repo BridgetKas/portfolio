@@ -1,11 +1,9 @@
-'use client'
-
 import {useState} from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import sendEmail from '../Components/sendEmail';
 import { validateEmail } from '../utilis/validate';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -17,7 +15,6 @@ function ContactPage() {
     phone:'',
     textarea:''
   })
-  // const [isPending, startTransition] = useTransition();
 
   function handleChange(e:React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>){
     setInput({
@@ -38,15 +35,23 @@ function ContactPage() {
   async function handleSubmit(e:React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     validateEmail(input.email)
-    // startTransition(async () => {
-    //   const {error} = await updateName(name);
-    //   if (!error) {
-    //   } else {
-    //   }
-    //  })
-    console.log(sendEmail())
-    // alert('Thank you for contacting us')
-    clearInput()
+    const templateID = import.meta.env.VITE_TEMPLATE_ID
+    const serviceID = import.meta.env.VITE_SERVICE_ID
+    const publicKEY = import.meta.env.VITE_PUBLIC_KEY
+    const templateData = {
+      "from_name":input.name,
+      "from_email":input.email,
+      message:input.textarea
+    }
+
+    try {
+      await emailjs.send(serviceID, templateID, templateData,{ publicKey:publicKEY})
+      alert('Thank you for contacting us. We will get back to you shortly')
+      clearInput()
+    }catch(error) {
+      alert("Failed please try again later")
+    }
+ 
   }
 
   return (
