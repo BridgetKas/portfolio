@@ -37,7 +37,7 @@ const authentication = [
 
 function ProjectsPage() {
   return (
-    <div className='flex flex-col w-[95%] mx-auto sm:flex-row   sm:gap-2.5 sm:flex-wrap mb-[60px]'>
+    <div className='flex flex-col w-[95%] mx-auto sm:flex-row   sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
       <ProjectComponent summary='Hello' image='./InteriorApp.png' languagesArray={shoeApp}/>
       <ProjectComponent summary='Hello' image='./shoeApp.png' languagesArray={shoeApp}/>
       <ProjectComponent summary='Hello' image='./productivityApp.png' languagesArray={shoeApp}/>
