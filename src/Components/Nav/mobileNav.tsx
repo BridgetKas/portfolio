@@ -22,7 +22,7 @@ const navbar = [
       path:'/projects'
   },
   {
-      label:"Contact",
+      label:"Contact Me",
       id:4,
       path:'/contact' 
   }
