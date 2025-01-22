@@ -7,7 +7,26 @@ export default {
     extend: {
       animation: {
         slowspin: "spin 10s linear infinite", // Define a custom animation
-        slowPulse: 'slow-pulse 5s ease-in-out infinite'
+        slowPulse: 'slow-pulse 5s ease-in-out infinite',
+        'slide-in-left': 'slide-in-left 1.5s ease-out forwards',
+        'slide-in-right': 'slide-in-right 1.5s ease-out forwards',
+        'fade-in': 'fade-in 3s ease-out forwards',
+      },
+  
+      keyframes: {
+        'slide-in-left': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'slide-in-right': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateX(10px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+       
       },
       colors:{
         primary: "#ede8e3",

@@ -15,7 +15,7 @@ interface languageObject{
 function ProjectComponent(props:propType) {
     const {summary,image,languagesArray} = props
   return (
-    <div className='flex flex-col gap-2 bg-red-500 w-[90%] mx-auto mt-3 rounded-t-xl shadow-2xl  sm:w-[45%]'>
+    <div className='flex flex-col gap-2 bg-red-500 w-[90%] mx-auto mt-3 rounded-t-xl shadow-2xl  sm:w-[45%] hover:bg-purple-500 hover:cursor-pointer hover:scale-105 transform '>
         <div>
             <img src={image} className='rounded-t-lg'/>
         </div>

@@ -42,9 +42,6 @@ function ProjectsPage() {
       <ProjectComponent summary='Hello' image='./shoeApp.png' languagesArray={shoeApp}/>
       <ProjectComponent summary='Hello' image='./productivityApp.png' languagesArray={shoeApp}/>
       <ProjectComponent summary='Hello' image='./authenticationApp.png' languagesArray={authentication}/>
-
-
-
     </div>
   )
 }
