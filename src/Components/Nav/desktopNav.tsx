@@ -21,7 +21,7 @@ const navbar = [
         path:'/projects'
     },
     {
-        label:"Contact Me",
+        label:"Contact",
         id:4,
         path:'/contact' 
     }

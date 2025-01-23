@@ -1,38 +1,46 @@
 
 type propType = {
-    summary:string,
+    // title:string,
     image: string | undefined,
-    languagesArray:Array<languageObject>
+    languagesArray:Array<languageObject>,
+    sourcecode:string,
+    liveapp:string,
+    description:string
 }
 
 interface languageObject{
     language:string,
     id:number,
-    backgroundColor:string
+    backgroundColor:string,
+    textColor:string
 }
 
 
 function ProjectComponent(props:propType) {
-    const {summary,image,languagesArray} = props
+    const {image,languagesArray,sourcecode,liveapp,description} = props
+
   return (
-    <div className='flex flex-col gap-2 bg-red-500 w-[90%] mx-auto mt-3 rounded-t-xl shadow-2xl  sm:w-[45%] hover:bg-purple-500 hover:cursor-pointer hover:scale-105 transform '>
-        <div>
-            <img src={image} className='rounded-t-lg'/>
+    <div className='flex flex-col gap-2 w-[90%] h-[390px] mx-auto mt-3 rounded-t-xl shadow-2xl  sm:w-[45%]  hover:scale-105 transform  transition-all duration-500 ease-in-out '>
+        <div className='bg-gray-300 h-[60%] w-full rounded-t-lg'>
+            <img src={image} className='rounded-t-lg h-full w-full'/>
         </div>
-        <div className='py-2 px-2.5'>
-            <div className='flex items-center gap-2.5 flex-wrap  '>
+        <div className='py-2.5 px-2.5'>
+            <div className='flex items-center gap-2.5 flex-wrap '>
                 {
                     languagesArray.map(item => <button style={{
-                        backgroundColor:item.backgroundColor
+                        backgroundColor:item.backgroundColor,
+                        color:item.textColor
                     }} key={item.id}className='text-black border-2 border-transparent outline-none bg-transparent rounded-full text-[16px] font-bold px-2 py-1'>{item.language}</button>)
                 }
             </div>
-            <p>{summary}</p>
-            <div className='flex justify-between'>
-                <a>Source code</a>
-                <a>Learn more</a>
+            {/* <p>{}</p> */}
+            <p className='leading-[1.4] pt-2'>{description}</p>
+            <div className='flex justify-between pb-1'>
+                <a href={sourcecode} target='_blank' className='text-blue-800 text-[16px] hover:underline active:text-violet-700 '>Source code</a>
+                <a href={liveapp}  className='text-blue-800 text-[16px]  active:text-violet-700'>Live App</a>
             </div>
         </div>
+        
     </div>
   )
 }
