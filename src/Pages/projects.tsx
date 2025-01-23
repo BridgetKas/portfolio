@@ -44,28 +44,24 @@ function ProjectsPage() {
   return (
     <div className='flex flex-col w-[95%] mx-auto sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
       <ProjectComponent 
-        // title='Productivity App' 
-        description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
+        description="A productivity application to track and visualize daily tasks helping users to manage their time effectively. Responsive design for mobile and website"
         image='./productivityApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/ProductivityApp" liveapp="#"
       />
       <ProjectComponent 
-        // title='Hello' 
         description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
         image='./InteriorApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/InteriorApp" liveapp="#"
       />
       <ProjectComponent 
-        // title='Hello' 
         description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
         image='./shoeApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="#"
       />
       <ProjectComponent 
-        // title='Hello' 
         description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
         image='./authenticationApp.png' 
         languagesArray={authentication} 

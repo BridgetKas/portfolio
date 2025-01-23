@@ -42,13 +42,13 @@ function DesktopNav() {
                     {
                         navbar.map((item)=> (
                             <div key={item.id}>
-                                <NavLink to={item.path} className='hover:text-yellow'>{item.label}</NavLink>
+                                <NavLink to={item.path} className='hover:text-[#f5a005]'>{item.label}</NavLink>
                             </div>
                         ))
                     }
                 </div>
                 
-                <button className="flex items-center space-x-2 bg-yellow text-primary px-3 py-2.5 rounded-full shadow animate-pulse" onClick={handleClick}>
+                <button className="flex items-center space-x-2 bg-[#f5a005] text-primary px-3 py-2.5 rounded-full shadow animate-pulse" onClick={handleClick}>
                     < FaBriefcase  className="w-4 h-4 text-white" />
                     <span>Available for Work</span>
                 </button>
