@@ -2,7 +2,7 @@ import MediaCard from "../Components/blog"
 
 function BlogPage() {
   return (
-    <div >
+    <div className="animate-fade-in" >
       <div className='flex flex-col items-center justify-center '>
         <div className='mt-3'>
          <img 
@@ -15,7 +15,7 @@ function BlogPage() {
         <p className=" text-center mt-1 p-3 w-[80%] mx-auto md:w-[60%] lg:w-[50%] ">Self taught developer figuring out this coding thing one line at a time. Getting better at Javascript, React and Typescript one day at a time </p>
       </div>
       <p className='underline text-left text-[18px] w-[80%] mx-auto font-medium'>Recent blogs</p>
-      <div className='flex flex-col  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
+      <div className='flex flex-col  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%] '>
         <MediaCard 
           title="Javascript Scopes" 
           description="A scope is a region in a function where you can access a variable. 
