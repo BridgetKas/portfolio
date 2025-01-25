@@ -14,15 +14,41 @@ function BlogPage() {
         <p className='mt-2 text-[20px] font-bold'>Bridget</p>
         <p className=" text-center mt-1 p-3 w-[80%] mx-auto md:w-[60%] lg:w-[50%] ">Self taught developer figuring out this coding thing one line at a time. Getting better at Javascript, React and Typescript one day at a time </p>
       </div>
-      <div className='flex  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
+      <p className='underline text-left text-[18px] w-[80%] mx-auto font-medium'>Recent blogs</p>
+      <div className='flex flex-col  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
         <MediaCard 
-        title="Javascript Closures" 
-        description="A scope is a region in a function where you can access a variable. Look at the following piece of code. 
-        Variables are accessible in the scope where they are defined and in any nested scopes." 
-        image="./js2.jpg" readmore="#"date="Dec 9 2024" time="3 min"/>
-        {/* <MediaCard title="Try me" description="me" image="./begineerJS1.jpg" readmore="#"/> */}
-        {/* <MediaCard title="Promises" description="Coming Soon..." image="./promises.jpg" readmore="#"/> */}
-        {/* <MediaCard title="Hoisting" description="Coming Soon..." image="./hoisting.png" readmore="#"/> */}
+          title="Javascript Scopes" 
+          description="A scope is a region in a function where you can access a variable. 
+          Variables are accessible in the scope where they are defined and in any nested scopes..." 
+          image="./js2.jpg" 
+          readmore="https://medium.com/@namugga.bridgetk/scopes-1d6efd0185bb"
+          date="Dec 9 2024" 
+          time="3 min"
+        />
+        <MediaCard 
+          title="Demystifying JavaScript’s toFixed Method" 
+          description="Javascript is known to be a versatile language used for web development. Just when you think you..." 
+          image="./begineerJS1.jpg" 
+          readmore="https://medium.com/@namugga.bridgetk/demystifying-javascripts-tofixed-method-for-precise-number-formatting-9f1d5ae13d53"
+          date="Sep 1 2024"
+          time="1 min"
+        />
+        <MediaCard 
+          title="Promises" 
+          description="Coming Soon..." 
+          image="./promises.jpg" 
+          readmore="#"
+          date=""
+          time=""
+        />
+        <MediaCard 
+          title="Hoisting" 
+          description="Coming Soon..." 
+          image="./hoisting.png" 
+          readmore="#"
+          date=""
+          time=""
+        />
       </div>
     </div>
 
