@@ -12,9 +12,9 @@ function BlogPage() {
           />
         </div>
         <p className='mt-2 text-[20px] font-bold'>Bridget</p>
-        <p className=" text-center mt-1 p-3 w-[80%] mx-auto md:w-[60%] lg:w-[50%] ">Self taught developer figuring out this coding thing one line at a time. Getting better at Javascript, React and Typescript one day at a time </p>
+        <p className=" text-center mt-1  w-[80%] mx-auto md:w-[60%] lg:w-[50%] ">Self taught developer figuring out this coding thing one line at a time. Getting better at Javascript, React and Typescript one day at a time </p>
       </div>
-      <p className='underline text-left text-[18px] w-[80%] mx-auto font-medium'>Recent blogs</p>
+      <p className='underline text-left text-[18px] w-[85%] mx-auto font-medium mt-1 lg:w-[75%]'>Recent blogs</p>
       <div className='flex flex-col  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%] '>
         <MediaCard 
           title="Javascript Scopes" 
