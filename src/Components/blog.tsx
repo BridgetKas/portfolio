@@ -11,10 +11,10 @@ type propsType = {
 export default function MediaCard(props:propsType) {
     const {title,description,image,readmore,date,time} = props
   return (
-    <div className='flex flex-col items-center gap-2 p-2 w-[90%] h-[390px] bg-red-500 mx-auto mt-4 shadow-2xl sm:flex-row sm:h-[320px] md:h-[250px]  hover:scale-105 transform  transition-all duration-500 ease-in-out'>
-        <div className='flex flex-col gap-2 w-full bg-yellow'>
-            <h1 className='text-secondary font-bold text-[30px]'>{title}</h1> 
-            <div className='flex  items-center justify-between bg-purple-500 '>
+    <div className=' mb-[60px] flex flex-col items-center gap-2 p-2 w-[90%] h-[440px] mx-auto mt-4 shadow-2xl sm:flex-row sm:h-[320px] md:h-[250px] lg:h-[220px] lg:w-[88%] hover:scale-105 transform  transition-all duration-500 ease-in-out'>
+        <div className='flex flex-col gap-2 w-full'>
+            <h1 className='text-[#0fa81c] font-bold text-[30px]'>{title}</h1> 
+            <div className='flex  items-center justify-between '>
                 <p>{date}</p>
                 <p className='flex items-center gap-2'><BiBookReader /> {time}</p>
             </div>

@@ -4,16 +4,17 @@ function BlogPage() {
   return (
     <div >
       <div className='flex flex-col items-center justify-center '>
-        <div>
+        <div className='mt-3'>
          <img 
           src="https://api.dicebear.com/9.x/open-peeps/svg?seed=Riley&accessories=sunglasses2,sunglasses,glasses5,glasses4,glasses3,glasses2,glasses,eyepatch&face=awe,concerned,concernedFear,contempt,cute,cyclops,driven,eatingHappy,explaining,eyesClosed,fear,hectic,lovingGrin1,lovingGrin2,monster,old,rage,serious,smile,smileBig,smileLOL,smileTeethGap,solemn,suspicious,tired,veryAngry,cheeky,angryWithFang,blank&facialHair=goatee2,moustache1,moustache2,moustache3,moustache4,moustache5,moustache6,moustache7,moustache8,moustache9&backgroundColor=transparent" 
           alt="Bridget's avatar"
           className="h-[150px] w-[150px] bg-yellow rounded-full"
           />
         </div>
-        <p className="text-center">Self taught developer figuring out this coding thing one line at a time. </p>
+        <p className='mt-2 text-[20px] font-bold'>Bridget</p>
+        <p className=" text-center mt-1 p-3 w-[80%] mx-auto md:w-[60%] lg:w-[50%] ">Self taught developer figuring out this coding thing one line at a time. Getting better at Javascript, React and Typescript one day at a time </p>
       </div>
-      <div className='flex  w-[95%] mx-auto sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
+      <div className='flex  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
         <MediaCard 
         title="Javascript Closures" 
         description="A scope is a region in a function where you can access a variable. Look at the following piece of code. 
