@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { FaBriefcase } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
+import { FaRegMoon } from "react-icons/fa";
 
 
 const navbar = [
@@ -36,7 +36,11 @@ function DesktopNav() {
     }
   return (
         <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full">
-            <p>LOGO</p>
+            {/* <p>LOGO</p> */}
+            <div className='p-2'>
+                <FaRegMoon size={28}/>
+            </div>
+
             <div className='sm:flex sm:flex-row sm:items-center sm:justify-between sm:w-[85%] md:w-[70%] lg:w-[60%]'>
                 <div className='sm:flex sm:flex-row items-center gap-5' >
                     {

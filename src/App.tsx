@@ -7,6 +7,7 @@ import ProjectsPage from "./Pages/projects";
 import ContactPage from "./Pages/contact";
 
 
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -38,10 +39,11 @@ const router = createBrowserRouter([
   
 ])
 function App() {
+  
   return (
-    <div>
-     <RouterProvider router={router}/>
-    </div>
+      <div id='light'>
+        <RouterProvider router={router}/>
+      </div>
   )
 }
 

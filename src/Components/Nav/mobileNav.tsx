@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
 import styles from './nav.module.css'
+import { FaRegMoon } from "react-icons/fa";
+
 
 
 const navbar = [
@@ -46,7 +48,10 @@ function MobileNav() {
   
     return (
       <div className="flex items-center justify-between w-[95%] mx-auto mt-3 bg-secondary py-4 px-2.5 text-primary rounded-full sm:hidden">
-        <p>LOGO</p>
+        {/* <p>LOGO</p> */}
+        <div className='p-2'>
+         <FaRegMoon size={28}/>
+        </div>
         <div className='flex flex-col  '>
           <GiHamburgerMenu size={30} color='#2f2f2f' onClick={menuClicked} /> 
             <div className={`${styles.mobileDropdown} ${isOpen ? styles.open: ""}`}>
