@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
 import styles from './nav.module.css'
 import { FaRegMoon } from "react-icons/fa";
+// import ThemeProvider from '../ThemeContext';
 
 
 
@@ -34,6 +35,7 @@ const body:bodyType= document.querySelector('body')
 
 function MobileNav() {
     const [isOpen,setisOpen] = useState(false)
+    // const {darkTheme , toggleTheme} = useContext(ThemeProvider)
 
     const menuClicked = () => {
       setisOpen(!isOpen)
@@ -45,12 +47,17 @@ function MobileNav() {
     const linkClicked=() =>{
       setisOpen(!isOpen)
     }
+
+    const handleClick = () => {
+      
+
+    }
   
     return (
       <div className="flex items-center justify-between w-[95%] mx-auto mt-3 bg-secondary py-4 px-2.5 text-primary rounded-full sm:hidden">
         {/* <p>LOGO</p> */}
         <div className='p-2'>
-         <FaRegMoon size={28}/>
+         <FaRegMoon size={28} onClick={handleClick}/>
         </div>
         <div className='flex flex-col  '>
           <GiHamburgerMenu size={30} color='#2f2f2f' onClick={menuClicked} /> 

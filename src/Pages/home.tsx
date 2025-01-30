@@ -7,8 +7,8 @@ import { FaXTwitter } from "react-icons/fa6";
 function HomePage() {
  
   return (
-    <div className='flex flex-col items-center mt-[20px] mb-[60px] gap-[20px] w-[90%] mx-auto sm:flex-row sm:mt-[40px] sm:justify-between'>
-      <div className='w-full sm:w-[48%] text-center p-3 lg:text-left shadow-2xl rounded-3xl'>
+    <div className='flex flex-col items-center mt-[20px] mb-[60px] gap-[20px] w-[90%] mx-auto sm:flex-row sm:mt-[40px] sm:justify-between' >
+      <div className='w-full sm:w-[50%] text-center p-3 lg:text-left shadow-2xl rounded-3xl dark:text-whiteGradient'>
         <p className='text-[50px] font-bold  mb-5  animate-fade-in transition-all duration-400 ease-in-out'>
           Hi I'm <span className='name'>Bridget</span>
         </p>

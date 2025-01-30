@@ -34,7 +34,7 @@ export default {
         yellow: "#faac1d",
         black: "#2f2f2f",
         white: "#fff",
-        whiteGradient: "rgba(255, 255, 255, 0.5)",
+        whiteGradient: "rgba(255, 255, 255, 0.4)",
         darkGray: "#6a6a6a",
         paleBlue:"#adb5bd",
         // transparent:"#d8e8d9"
@@ -44,5 +44,7 @@ export default {
     },
   },
   plugins: [],
+  darkMode: 'selector'
 }
+
 

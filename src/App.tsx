@@ -5,6 +5,7 @@ import AboutPage from "./Pages/about";
 import BlogPage from "./Pages/blog";
 import ProjectsPage from "./Pages/projects";
 import ContactPage from "./Pages/contact";
+import ErrorComponent from "./Components/errorComponent";
 
 
 
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
   {
     path:"/",
     element:<LayOut/>,
-    errorElement:<h1>Operation failed</h1>,
+    errorElement:<ErrorComponent/>,
     children: [
       {
         index: true,

@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom'
 import { FaBriefcase } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { FaRegMoon } from "react-icons/fa";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { useState,useEffect } from 'react';
 
 
 const navbar = [
@@ -28,18 +30,42 @@ const navbar = [
 ]
 
 function DesktopNav() {
+    const [dark,setDark] = useState(localStorage.getItem('Darktheme') === 'isTrue' ? true : false)
     const navigate = useNavigate()
+    
+     useEffect(() => {
+        const userTheme = localStorage.getItem('Darktheme')
+        if(userTheme === 'isTrue'){
+            document.documentElement.classList.add('dark')
+        }else {
+            document.documentElement.classList.remove('dark')
+        }
+     },[dark])
+
+    const handleToggle = () => {
+        setDark(!dark)
+        if(dark) {
+            document.documentElement.classList.remove('dark')
+            localStorage.setItem('Darktheme', 'isFalse')
+        }else{
+            document.documentElement.classList.add('dark')
+            localStorage.setItem('Darktheme', 'isTrue')
+        }
+    }
 
     function handleClick() {
       navigate('./contact')
       
     }
+
+    console.log(dark)
   return (
-        <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full">
+        <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full  dark:text-whiteGradient dark:bg-slate-900">
             {/* <p>LOGO</p> */}
-            <div className='p-2'>
-                <FaRegMoon size={28}/>
-            </div>
+            <button className='p-2' onClick={handleToggle}>
+                {/* {themeIcon} */}
+                {dark? <FaRegMoon size={28}/> : <MdOutlineWbSunny size={30}/>}
+            </button>
 
             <div className='sm:flex sm:flex-row sm:items-center sm:justify-between sm:w-[85%] md:w-[70%] lg:w-[60%]'>
                 <div className='sm:flex sm:flex-row items-center gap-5' >

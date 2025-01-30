@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.dark {
+  background-color: #0f172a ;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
