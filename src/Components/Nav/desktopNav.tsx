@@ -59,7 +59,7 @@ function DesktopNav() {
     }
 
   return (
-        <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full  dark:text-whiteGradient dark:bg-slate-900">
+        <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full  dark:text-whiteGradient dark:bg-darkFootNav">
             <button className='p-2' onClick={handleToggle}>
                 {dark? <FaRegMoon size={28}/> : <MdOutlineWbSunny size={30}/>}
             </button>
@@ -69,7 +69,7 @@ function DesktopNav() {
                     {
                         navbar.map((item)=> (
                             <div key={item.id}>
-                                <NavLink to={item.path} className='hover:text-[#f5a005]'>{item.label}</NavLink>
+                                <NavLink to={item.path} className='hover:text-[#f5a005] '>{item.label}</NavLink>
                             </div>
                         ))
                     }

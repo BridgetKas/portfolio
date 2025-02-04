@@ -37,7 +37,7 @@ export default {
         whiteGradient: "rgba(255, 255, 255, 0.4)",
         darkGray: "#6a6a6a",
         paleBlue:"#adb5bd",
-        // transparent:"#d8e8d9"
+        darkFootNav:"#1e293b"
       },
       
       
