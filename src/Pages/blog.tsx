@@ -11,11 +11,11 @@ function BlogPage() {
           className="h-[150px] w-[150px] bg-yellow rounded-full"
           />
         </div>
-        <p className='mt-2 text-[20px] font-bold'>Bridget</p>
-        <p className=" text-center mt-1  w-[80%] mx-auto md:w-[60%] lg:w-[50%] ">Self taught developer figuring out this coding thing one line at a time. Getting better at Javascript, React and Typescript one day at a time </p>
+        <p className='mt-2 text-[20px] font-bold dark:text-yellow'>Bridget</p>
+        <p className=" text-center mt-1  w-[80%] mx-auto md:w-[60%] lg:w-[50%] dark:text-whiteGradient">Self taught developer figuring out this coding thing one line at a time. Getting better at Javascript, React and Typescript one day at a time </p>
       </div>
-      <p className='underline text-left text-[18px] w-[85%] mx-auto font-medium mt-1 lg:w-[75%]'>Recent blogs</p>
-      <div className='flex flex-col  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%] '>
+      <p className='underline text-left text-[18px] w-[85%] mx-auto font-medium mt-1 lg:w-[75%]  dark:text-yellow'>Recent blogs</p>
+      <div className='flex flex-col  w-[95%] mx-auto  sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]  dark:text-whiteGradient'>
         <MediaCard 
           title="Javascript Scopes" 
           description="A scope is a region in a function where you can access a variable. 
