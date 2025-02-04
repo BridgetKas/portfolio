@@ -58,12 +58,9 @@ function DesktopNav() {
       
     }
 
-    console.log(dark)
   return (
         <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full  dark:text-whiteGradient dark:bg-slate-900">
-            {/* <p>LOGO</p> */}
             <button className='p-2' onClick={handleToggle}>
-                {/* {themeIcon} */}
                 {dark? <FaRegMoon size={28}/> : <MdOutlineWbSunny size={30}/>}
             </button>
 

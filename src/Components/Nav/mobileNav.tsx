@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import {  useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router-dom'
 import styles from './nav.module.css'
