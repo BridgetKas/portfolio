@@ -69,7 +69,7 @@ function DesktopNav() {
                     {
                         navbar.map((item)=> (
                             <div key={item.id}>
-                                <NavLink to={item.path} className='hover:text-[#f5a005] '>{item.label}</NavLink>
+                                <NavLink to={item.path} className='hover:text-[#f5a005]'>{item.label}</NavLink>
                             </div>
                         ))
                     }
