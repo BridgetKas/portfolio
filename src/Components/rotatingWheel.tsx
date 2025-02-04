@@ -27,7 +27,7 @@ function RotatingWheel (){
         return (
           <div
             key={index}
-            className="absolute flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2"
+            className="absolute flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2  dark:bg-yellow"
             style={{
               left: `calc(50% + ${x}px)`,
               top: `calc(50% + ${y}px)`,
