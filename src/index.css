@@ -48,5 +48,9 @@ html {
     @apply focus:outline-none focus:outline-yellow focus:rounded-xl
   }
 
+  .focusBtn {
+    @apply focus:outline-none focus:outline-black focus:rounded-xl dark:focus:outline-yellow
+  }
+
   
 }
