@@ -60,22 +60,22 @@ function DesktopNav() {
 
   return (
         <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 sm:mb-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full  dark:text-whiteGradient dark:bg-darkFootNav">
-            <button className='p-2' onClick={handleToggle}>
+            <button className='p-2 focus' onClick={handleToggle}>
                 {dark? <FaRegMoon size={28}/> : <MdOutlineWbSunny size={30}/>}
             </button>
 
-            <div className='sm:flex sm:flex-row sm:items-center sm:justify-between sm:w-[85%] md:w-[70%] lg:w-[60%]'>
-                <div className='sm:flex sm:flex-row items-center gap-5' >
+            <div className='sm:flex sm:flex-row sm:items-center sm:justify-between sm:w-[89%] md:w-[70%] lg:w-[60%]'>
+                <div className='sm:flex sm:flex-row sm:items-center sm:justify-between gap-5 p-2 sm:w-[60%]' >
                     {
                         navbar.map((item)=> (
                             <div key={item.id}>
-                                <NavLink to={item.path} className='hover:text-[#f5a005]'>{item.label}</NavLink>
+                                <NavLink to={item.path} className='hover:text-[#f5a005] focus p-1'>{item.label}</NavLink>
                             </div>
                         ))
                     }
                 </div>
                 
-                <button className="flex items-center space-x-2 bg-[#f5a005] text-primary px-3 py-2.5 rounded-full shadow animate-pulse" onClick={handleClick}>
+                <button className="flex items-center space-x-2 bg-[#f5a005] text-primary px-3 py-2.5 rounded-full shadow animate-pulse focus" onClick={handleClick}>
                     < FaBriefcase  className="w-4 h-4 text-white" />
                     <span>Available for Work</span>
                 </button>

@@ -44,5 +44,9 @@ html {
     @apply opacity-0 animate-fade-in
   }
 
+  .focus {
+    @apply focus:outline-none focus:outline-yellow focus:rounded-xl
+  }
+
   
 }
