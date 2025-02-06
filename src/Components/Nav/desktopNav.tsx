@@ -60,11 +60,11 @@ function DesktopNav() {
 
   return (
         <div className="hidden sm:flex sm:items-center sm:justify-between sm:text-[18px] sm:w-[95%] sm:mx-auto sm:mt-3 sm:mb-3 bg-secondary sm:py-4 sm:px-2.5 text-primary sm:rounded-full  dark:text-whiteGradient dark:bg-darkFootNav">
-            <button className='p-2 focus' onClick={handleToggle}>
+            <button className='p-2 focus ml-2' onClick={handleToggle}>
                 {dark? <FaRegMoon size={28}/> : <MdOutlineWbSunny size={30}/>}
             </button>
 
-            <div className='sm:flex sm:flex-row sm:items-center sm:justify-between sm:w-[89%] md:w-[70%] lg:w-[60%]'>
+            <div className='sm:flex sm:flex-row sm:items-center sm:justify-between sm:w-[89%] md:w-[80%] lg:w-[60%]'>
                 <div className='sm:flex sm:flex-row sm:items-center sm:justify-between gap-5 p-2 sm:w-[60%]' >
                     {
                         navbar.map((item)=> (
