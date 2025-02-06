@@ -20,7 +20,7 @@ export default function MediaCard(props:propsType) {
             </div>
             <p className=''>{description}</p>
             <div>
-                <a href={readmore} target='_blank' className=' text-blue-950 hover:underline focus:text-purple-800 dark:text-blue-600'>Read more</a>
+                <a href={readmore} target='_blank' className=' text-blue-950 hover:underline dark:text-blue-600 focusLink p-1.5'>Read more</a>
             </div>
         </div>
         <div className='w-full flex items-center justify-center'>

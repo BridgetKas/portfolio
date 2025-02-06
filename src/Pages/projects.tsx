@@ -42,7 +42,7 @@ const authentication = [
 
 function ProjectsPage() {
   return (
-    <div className='flex flex-col w-[95%] mx-auto sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[60px] lg:w-[85%]'>
+    <div className='flex flex-col w-[95%] mx-auto sm:flex-row sm:gap-2.5 sm:flex-wrap mb-[70px] lg:w-[85%]'>
       <ProjectComponent 
         description="A productivity application to track and visualize daily tasks helping users to manage their time effectively. Responsive design for mobile and website"
         image='./productivityApp.png' 

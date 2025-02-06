@@ -20,7 +20,7 @@ function ProjectComponent(props:propType) {
     const {image,languagesArray,sourcecode,liveapp,description} = props
 
   return (
-    <div className='flex flex-col gap-2 w-[90%] h-[390px] mx-auto mt-3 rounded-t-xl shadow-2xl  sm:w-[45%]  hover:scale-105 transform  transition-all duration-500 ease-in-out dark:bg-darkFootNav '>
+    <div className='flex flex-col gap-2 w-[90%] h-[425px] mx-auto mt-3 rounded-t-xl shadow-2xl  sm:w-[45%]  hover:scale-105 transform  transition-all duration-500 ease-in-out dark:bg-darkFootNav '>
         <div className='bg-gray-300 h-[60%] w-full rounded-t-lg dark:bg-darkFootNav'>
             <img src={image} className='rounded-t-lg h-full w-full'/>
         </div>
@@ -34,9 +34,9 @@ function ProjectComponent(props:propType) {
                 }
             </div>
             <p className='leading-[1.4] pt-2 dark:text-whiteGradient'>{description}</p>
-            <div className='flex justify-between pb-1'>
-                <a href={sourcecode} target='_blank' className='text-blue-800 text-[16px] hover:underline active:text-violet-700 dark:text-blue-600'>Source code</a>
-                <a href={liveapp}  className='text-blue-800 text-[16px]  active:text-violet-700 dark:text-blue-600'>Live App</a>
+            <div className='flex justify-between py-1 mt-1'>
+                <a href={sourcecode} target='_blank' className='text-blue-800 text-[16px] hover:underline dark:text-blue-600 focusLink px-1'>Source code</a>
+                <a href={liveapp}  className='text-blue-800 text-[16px]  dark:text-blue-600 focusLink px-1'>Live App</a>
             </div>
         </div>
         

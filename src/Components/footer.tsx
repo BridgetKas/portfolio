@@ -12,9 +12,9 @@ function Footer() {
 
         </div>
         <div className="flex flex-row text-[16px] items-center text-center gap-2.5 sm:text-xl">
-          <a href='#' target='_blank' className='hover:scale-110 transform'><FaLinkedin /></a>
-          <a href='#' target='_blank' className='hover:scale-110 transform'><FaGithub /></a>
-          <a href='#' target='_blank' className='hover:scale-110 transform'><FaXTwitter /></a> 
+          <a href='#' target='_blank' className='hover:scale-110 transform p-1 focus'><FaLinkedin /></a>
+          <a href='#' target='_blank' className='hover:scale-110 transform p-1 focus'><FaGithub /></a>
+          <a href='#' target='_blank' className='hover:scale-110 transform p-1 focus'><FaXTwitter /></a> 
         </div>
     </footer>
   )

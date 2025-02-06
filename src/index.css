@@ -45,11 +45,20 @@ html {
   }
 
   .focus {
+    @apply focus:outline-none focus:outline-yellow focus:rounded-xl focus:text-yellow
+  }
+  
+  .focusWork {
     @apply focus:outline-none focus:outline-yellow focus:rounded-xl
   }
 
-  .focusBtn {
-    @apply focus:outline-none focus:outline-black focus:rounded-xl dark:focus:outline-yellow
+
+  .focusIcon {
+    @apply focus:outline-none focus:outline-black focus:rounded-xl dark:focus:outline-yellow dark:focus:text-yellow
+  }
+
+  .focusLink {
+    @apply focus:outline-none focus:outline-purple-800  focus:text-purple-800 focus:rounded-xl  dark:focus:outline-yellow dark:focus:text-yellow
   }
 
   
