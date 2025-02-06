@@ -22,7 +22,7 @@ function ProjectComponent(props:propType) {
   return (
     <div className='flex flex-col gap-2 w-[90%] h-[390px] mx-auto mt-3 rounded-t-xl shadow-2xl  sm:w-[45%]  hover:scale-105 transform  transition-all duration-500 ease-in-out dark:bg-darkFootNav '>
         <div className='bg-gray-300 h-[60%] w-full rounded-t-lg dark:bg-darkFootNav'>
-            <img src={image} className='rounded-t-lg h-full w-full object-cover'/>
+            <img src={image} className='rounded-t-lg h-full w-full'/>
         </div>
         <div className='py-2.5 px-2.5'>
             <div className='flex items-center gap-2.5 flex-wrap '>
