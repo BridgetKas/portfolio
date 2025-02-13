@@ -43,7 +43,6 @@ function ContactPage() {
       "from_email":input.email,
       message:input.textarea
     }
-
     try {
       await emailjs.send(serviceID, templateID, templateData,{ publicKey:publicKEY})
       alert('Thank you for contacting us. We will get back to you shortly')
