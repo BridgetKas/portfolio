@@ -59,7 +59,7 @@ function ProjectsPage() {
         description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
         image='./shoeApp.png' 
         languagesArray={shoeApp} 
-        sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="#"
+        sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="https://shoe-store-ivory.vercel.app/"
       />
       <ProjectComponent 
         description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
