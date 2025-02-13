@@ -50,13 +50,13 @@ function ProjectsPage() {
         sourcecode="https://github.com/BridgetKas/ProductivityApp" liveapp="#"
       />
       <ProjectComponent 
-        description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
+        description="A e-commerce store for an Interior Design Company"
         image='./InteriorApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/InteriorApp" liveapp="https://interior-app-fawn.vercel.app/"
       />
       <ProjectComponent 
-        description="An e-commerence store for a shoe company"
+        description="An e-commerce store for a shoe company"
         image='./shoeApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="https://shoe-store-ivory.vercel.app/"
