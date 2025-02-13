@@ -53,10 +53,10 @@ function ProjectsPage() {
         description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
         image='./InteriorApp.png' 
         languagesArray={shoeApp} 
-        sourcecode="https://github.com/BridgetKas/InteriorApp" liveapp="#"
+        sourcecode="https://github.com/BridgetKas/InteriorApp" liveapp="https://interior-app-fawn.vercel.app/"
       />
       <ProjectComponent 
-        description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
+        description="An e-commerence store for a shoe company"
         image='./shoeApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="https://shoe-store-ivory.vercel.app/"
