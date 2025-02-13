@@ -47,7 +47,7 @@ function ProjectsPage() {
         description="A productivity application to track and visualize daily tasks helping users to manage their time effectively. Responsive design for mobile and website"
         image='./productivityApp.png' 
         languagesArray={shoeApp} 
-        sourcecode="https://github.com/BridgetKas/ProductivityApp" liveapp="#"
+        sourcecode="https://github.com/BridgetKas/ProductivityApp" liveapp="https://productivity-app-drab.vercel.app/"
       />
       <ProjectComponent 
         description="A e-commerce store for an Interior Design Company"
@@ -62,10 +62,10 @@ function ProjectsPage() {
         sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="https://shoe-store-ivory.vercel.app/"
       />
       <ProjectComponent 
-        description="A web application to track and visualize daily tasks helping users to manage their time effectively.Responsive design for mobile and website"
+        description="A web application that authenticates users upon sigining in "
         image='./authenticationApp.png' 
         languagesArray={authentication} 
-        sourcecode="https://github.com/BridgetKas/authenticationApp" liveapp="#"
+        sourcecode="https://github.com/BridgetKas/authenticationApp" liveapp="https://authentication-app-ten-teal.vercel.app/"
       />
       
     </div>
