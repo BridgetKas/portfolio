@@ -50,13 +50,13 @@ function ProjectsPage() {
         sourcecode="https://github.com/BridgetKas/ProductivityApp" liveapp="https://productivity-app-drab.vercel.app/"
       />
       <ProjectComponent 
-        description="A e-commerce store for an Interior Design Company"
+        description="A responsive e-commerce application built with React.js.This design emphasizes a user-friendly design and delivers a seamless shopping experience."
         image='./InteriorApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/InteriorApp" liveapp="https://interior-app-fawn.vercel.app/"
       />
       <ProjectComponent 
-        description="An e-commerce store for a shoe company"
+        description="An user-friendly responsive e-commerce application that uses react router to navigate between pages.The application uses a mobile-first design approach"
         image='./shoeApp.png' 
         languagesArray={shoeApp} 
         sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="https://shoe-store-ivory.vercel.app/"

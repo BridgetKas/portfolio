@@ -36,7 +36,7 @@ function ProjectComponent(props:propType) {
             <p className='leading-[1.4] pt-2 dark:text-whiteGradient'>{description}</p>
             <div className='flex justify-between py-1 mt-1'>
                 <a href={sourcecode} target='_blank' className='text-blue-800 text-[16px]  underline hover:underline dark:text-blue-600 focusLink px-1'>Source code</a>
-                <a href={liveapp}  className='text-blue-800 text-[16px] underline dark:text-blue-600 focusLink px-1'>Live App</a>
+                <a href={liveapp}  target='_blank' className='text-blue-800 text-[16px] underline dark:text-blue-600 focusLink px-1'>Live App</a>
             </div>
         </div>
         
