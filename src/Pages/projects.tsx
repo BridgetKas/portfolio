@@ -62,7 +62,7 @@ function ProjectsPage() {
         sourcecode="https://github.com/BridgetKas/ShoeStore" liveapp="https://shoe-store-ivory.vercel.app/"
       />
       <ProjectComponent 
-        description="A web application that authenticates users upon sigining in "
+        description="A responsive web application that intergrates secure JWT-based authentication to ensure data protection for users.This application is user-friendly."
         image='./authenticationApp.png' 
         languagesArray={authentication} 
         sourcecode="https://github.com/BridgetKas/authenticationApp" liveapp="https://authentication-app-ten-teal.vercel.app/"
