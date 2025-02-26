@@ -58,9 +58,9 @@ function ContactPage() {
       <div className='md:w-[50%]' >
         <h1 className=' text-[40px] leading-snug p-4 text-center md:text-left dark:text-whiteGradient'>Let's Connect and Build your <span className='text-yellow font-medium'>Next Project</span></h1>
         <div className="flex flex-row text-[30px] gap-2.5 items-center justify-center p-4 my-10">
-          <a href='#' target='_blank' className='hover:scale-110 transform  dark:text-whiteGradient focusIcon p-1'><FaLinkedin /></a>
-          <a href='#' target='_blank' className='hover:scale-110 transform  dark:text-whiteGradient focusIcon p-1'><FaGithub /></a>
-          <a href='#' target='_blank' className='hover:scale-110 transform  dark:text-whiteGradient focusIcon p-1'><FaXTwitter /></a> 
+          <a href='https://linkedin.com/in/bridget-namugga-3a1b02166' target='_blank' className='hover:scale-110 transform  dark:text-whiteGradient focusIcon p-1'><FaLinkedin /></a>
+          <a href='https://github.com/BridgetKas' target='_blank' className='hover:scale-110 transform  dark:text-whiteGradient focusIcon p-1'><FaGithub /></a>
+          <a href='https://x.com/bridget_kasujja' target='_blank' className='hover:scale-110 transform  dark:text-whiteGradient focusIcon p-1'><FaXTwitter /></a> 
         </div>
       </div>
       <form className='flex flex-col p-4 md:w-[50%]  shadow-2xl dark:bg-darkFootNav dark:rounded-xl' onSubmit={handleSubmit}>

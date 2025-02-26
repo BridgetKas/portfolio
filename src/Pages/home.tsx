@@ -17,9 +17,9 @@ function HomePage() {
           <p className='mb-3'>Technologically, I possess expertise in modern frameworks and technologies like Javascript,React, TypeScript, and Tailwind CSS.As a driven individual, I continously strive to explore new domains within technology.</p>
           <p>Explore my work, and let's work together!</p>
           <div className="flex flex-row text-[25px] items-center justify-center gap-2.5 py-4 px-1">
-            <a href='#' target='_blank' className='hover:scale-110 transform p-1 focusIcon'><FaLinkedin /></a>
-            <a href='#' target='_blank' className='hover:scale-110 transform  p-1 focusIcon'><FaGithub /></a>
-            <a href='#' target='_blank' className='hover:scale-110 transform  p-1 focusIcon'><FaXTwitter /></a> 
+            <a href='https://linkedin.com/in/bridget-namugga-3a1b02166' target='_blank' className='hover:scale-110 transform p-1 focusIcon'><FaLinkedin /></a>
+            <a href='https://github.com/BridgetKas' target='_blank' className='hover:scale-110 transform  p-1 focusIcon'><FaGithub /></a>
+            <a href='https://x.com/bridget_kasujja' target='_blank' className='hover:scale-110 transform  p-1 focusIcon'><FaXTwitter /></a> 
           </div>
         </div>
       </div>
