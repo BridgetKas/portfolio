@@ -60,6 +60,18 @@ html {
   .focusLink {
     @apply focus:outline-none focus:outline-purple-800  focus:text-purple-800 focus:rounded-xl  dark:focus:outline-yellow dark:focus:text-yellow
   }
-
-  
 }
+
+@layer utilities {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+  }
+}
+
