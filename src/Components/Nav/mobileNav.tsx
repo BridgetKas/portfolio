@@ -76,7 +76,7 @@ function MobileNav() {
           <GiHamburgerMenu size={30} color='#ede8e3' onClick={menuClicked} /> 
             <div className={`${styles.mobileDropdown} ${isOpen ? styles.open: ""}`}>
               {navbar.map(item => 
-                <NavLink to={item.path} key={item.path} className='my-0 mx-[0.6rem] p-1.5 text-[18px] text-right text-primary w-full bg-secondary hover:text-[#f5a005]' onClick={linkClicked}>{item.label}</NavLink>
+                <NavLink to={item.path} key={item.path} className='my-0  p-2 text-[18px] text-right text-primary w-full bg-secondary hover:text-[#f5a005]' onClick={linkClicked}>{item.label}</NavLink>
               )}
             </div>
         </div>
