@@ -15,7 +15,7 @@ function RotatingWheel (){
     ]
 
   return (
-    <div className="relative w-[350px] h-[350px] mx-auto">
+    <div className="relative w-[350px] h-[350px] mx-auto overflow-x-auto overflow-y-hidden whitespace-nowrap ">
       {/* Rotating wheel border */}
       <div className="absolute inset-0 rounded-full border-2 border-gray-400 animate-slowspin"> 
       {icons.map((icon, index) => {
