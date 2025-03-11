@@ -68,7 +68,7 @@ function MobileNav() {
     }
   
     return (
-      <div className="flex items-center justify-between w-[95%] mx-auto mt-3  bg-secondary py-4 px-2.5 text-primary rounded-full sm:hidden">
+      <div className="flex items-center justify-between w-[95%] mx-auto mt-3  bg-secondary py-4 px-2.5 text-primary rounded-full sm:hidden  dark:bg-darkFootNav">
         <button className='p-2' onClick={handleToggle}>
           {dark? <FaRegMoon size={28}/> : <MdOutlineWbSunny size={30}/>}
         </button>
