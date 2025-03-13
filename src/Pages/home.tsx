@@ -23,7 +23,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className='w-full sm:w-[58%] self-start animate-slide-in-right p-3 overflow-x-scroll'>
+      <div className='w-full sm:w-[58%] self-start animate-slide-in-right p-3 overflow-x-scroll overflow-y-hidden'>
         <RotatingWheel />
       </div>
     
