@@ -30,6 +30,36 @@ const shoeApp = [
   },
 ]
 
+const houseChores = [
+  {
+    language:'html',
+    id:1,
+    backgroundColor:'#FF7F7F ',
+    textColor:'#8B0000'
+  },
+  {
+    language:'javascript',
+    id:2,
+    backgroundColor:'#ADD8E6',
+    textColor:'#0000FF'
+
+  },
+  {
+    language:'nextJs',
+    id:3,
+    backgroundColor:'#90EE90',
+    textColor:'#013220'
+
+  },
+  {
+    language:'css',
+    id:4,
+    backgroundColor:'yellow',
+    textColor:''
+
+  },
+]
+
 const authentication = [
   ...shoeApp,
   {
@@ -50,10 +80,10 @@ function ProjectsPage() {
         sourcecode="https://github.com/BridgetKas/ProductivityApp" liveapp="https://productivity-app-drab.vercel.app/"
       />
       <ProjectComponent 
-        description="A responsive e-commerce application built with React.js.This design emphasizes a user-friendly design and delivers a seamless shopping experience."
-        image='./InteriorApp.png' 
-        languagesArray={shoeApp} 
-        sourcecode="https://github.com/BridgetKas/InteriorApp" liveapp="https://interior-app-fawn.vercel.app/"
+        description="A gamified household chore tracker for families that turns everyday chores into a fun, rewarding experience for families thereby easing life."
+        image='./houseChores.png' 
+        languagesArray={houseChores} 
+        sourcecode="https://github.com/freeCodeCamp-2025-Summer-Hackathon/lime-variable" liveapp="lime-variable.vercel.app/"
       />
       <ProjectComponent 
         description="An user-friendly responsive e-commerce application that uses react router to navigate between pages.The application uses a mobile-first design approach"
