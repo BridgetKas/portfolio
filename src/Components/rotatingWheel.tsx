@@ -1,6 +1,6 @@
 import { FaReact, FaHtml5,FaJsSquare} from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsFill  } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 
 function RotatingWheel (){
@@ -11,11 +11,12 @@ function RotatingWheel (){
             <FaJsSquare color='#082407' size={35} />,
             <FaReact   color='#082407' size={40} />,
             <RiTailwindCssFill color='#082407' size={40} />,
-            <SiTypescript color='#082407' size={35} />
+            <SiTypescript color='#082407' size={35} />,
+            <RiNextjsFill color='#082407' size={40}/>
     ]
 
   return (
-    <div className="relative w-[350px] h-[350px] mx-auto">
+    <div className="relative w-[350px] h-[355px] mx-auto">
       {/* Rotating wheel border */}
       <div className="absolute inset-0 rounded-full border-2 border-gray-400 animate-slowspin"> 
       {icons.map((icon, index) => {
