@@ -1,4 +1,4 @@
-import { FaReact, FaHtml5,FaJsSquare} from "react-icons/fa";
+import { FaReact, FaHtml5,FaJsSquare, FaPython, FaNodeJs} from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io5";
 import { RiTailwindCssFill, RiNextjsFill  } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
@@ -12,7 +12,9 @@ function RotatingWheel (){
             <FaReact   color='#082407' size={40} />,
             <RiTailwindCssFill color='#082407' size={40} />,
             <SiTypescript color='#082407' size={35} />,
-            <RiNextjsFill color='#082407' size={40}/>
+            <RiNextjsFill color='#082407' size={40}/>,
+            <FaPython color='#082407' size={40} />,
+            <FaNodeJs color='#082407' size={40}/>
     ]
 
   return (
